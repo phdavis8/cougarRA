@@ -2,7 +2,6 @@
 
 #' This function creates a weighted frequency table.
 #' @export
-
 weighted_freq <- function(data, weight, variable) {
   # Ensure weight and variable are treated as strings
   weight <- deparse(substitute(weight))

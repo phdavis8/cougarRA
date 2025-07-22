@@ -7,8 +7,6 @@
 #' Users can also specify any necesarry filtering in the master dataframe.
 #' Essentially, the specifications for each crosstab are configured in the master dataframe, generally via Excel.
 #' @export
-
-# create a crosstab with archive data
 weighted_crosstab <- function(data, weight, y, x, digits = 1, total_row = FALSE) {
   # Input validation
   if (!all(c(weight, y, x) %in% names(data))) {

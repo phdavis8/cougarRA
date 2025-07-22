@@ -4,8 +4,6 @@
 
 #' Note: This function is still in a beta phase. Future updates should include customizable rouding, total rows, and updated syntax.
 #' @export
-
-
 cross_tabulate_by_year <- function(data, weight, y_col, x_col, year_col) {
   # Initialize an empty list to store results for each year
   results_list <- list()

@@ -5,7 +5,6 @@
 
 #' This function was developed by Alexander Bills.
 #' @export
-
 weighted_average <- function(data, var, group, weight) {
   # Capture the variable names as quosures
   var <- enquo(var)

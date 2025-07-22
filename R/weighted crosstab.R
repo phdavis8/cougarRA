@@ -6,8 +6,6 @@
 #' Second, weighted crosstab allows users to choose whether to include a total row for the N of each value of x. The default setting is no total column, but that can be adjusted by setting total_column to TRUE.
 #' Third, weighted crosstab has improved efficiency. Error messages are more specific, allowing users to easily troubleshoot. Likewise, weighted crosstab uses updated syntax, eliminating error messages for depreciated codes.
 #' @export
-
-
 weighted_crosstab <- function(data, weight, y, x, digits = 1, total_row = FALSE) {
   # Input validation
   if (!all(c(weight, y, x) %in% names(data))) {

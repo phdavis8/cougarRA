@@ -3,8 +3,6 @@
 #' This function allows users to create a simple, one variable frequency table for cross-sectional analysis.
 #' The user simply states the variable in the call, the weight, and the year column
 #' @export
-
-
 weighted_frequency_by_year <- function(data, weight, variable, year_col) {
   # Ensure all parameters are treated as strings
   weight <- deparse(substitute(weight))

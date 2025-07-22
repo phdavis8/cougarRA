@@ -4,7 +4,7 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of cougarRA is to make election survey analysis easy! 
+The goal of cougarRA is to make election survey analysis easy. 
 
 ## Installation
 
@@ -17,10 +17,11 @@ pak::pak("phdavis8/cougarRA")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This is an example of the weighted_crosstab function
 
 ``` r
 library(cougarRA)
 ## basic example code
+weighted_crosstab(data = df, x = x variable, y = y variable, weight = weight, digits = 2, total_row = FALSE)
 ```
 
